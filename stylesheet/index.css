@@ -1,4 +1,4 @@
-    *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -32,5 +32,66 @@ li a {
 }
 
 .active {
-  color: #04AA6D;
+  color: #ff9900;
 }
+.sidenav {
+    float:right;
+      display: none;
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      padding-top: 60px;
+    }
+    
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+    }
+    
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+    
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    
+    @media screen and (max-width: 425px) {
+
+        .sidenav {
+            display: block;
+        }
+        .that{
+            display: none;
+        }
+        }
+
+        @media screen and (max-width: 768px) {
+
+            .sidenav {
+                display: block;
+            }
+            .that{
+                display: none;
+            }
+            }
+            @media screen and (min-width: 769px) and (max-width:1440px) {
+                .sidenav {
+                display: none;
+                }
+                /* ul{
+                  margin-top: 300px;
+                } */
+                }
